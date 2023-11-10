@@ -3,7 +3,7 @@ const jsonData=require('./jsonpkg')
 
 const server = http.createServer((request,response)=>{
     if(request.url==='/'){
-        response.write("<p>This is Home server</p>")
+        response.write("<title>Handson1- Home server</title> <h1>What is Node Js</h1><p>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser</p>")
         response.end()
     }
     if(request.url==='/student'){
